@@ -14,4 +14,4 @@ COPY --chown=node:node . .
 
 EXPOSE 3000
 
-CMD [ "node", "index.js" ]
+ENTRYPOINT [ "/bin/sh", "-c node index.js" ]
